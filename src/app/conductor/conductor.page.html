@@ -1,0 +1,49 @@
+<ion-header>
+  <ion-toolbar class="toolbar">
+    <ion-buttons slot="start">
+      <!-- Agrega botones u otros elementos aquí si es necesario -->
+    </ion-buttons>
+    <ion-title>TeLlevo<span>APP</span></ion-title>
+  </ion-toolbar>
+  
+</ion-header>
+
+<ion-content>
+  <ion-list>
+    <ion-item>
+      <ion-label position="stacked" color="primary">Fecha</ion-label>
+      <ion-input type="date" [(ngModel)]="fecha" name="fecha" ></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-label position="stacked" color="primary">Hora de salida</ion-label>
+      <ion-input type="time" [(ngModel)]="hora" name="hora" ></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-label position="stacked" color="primary">Cupos</ion-label>
+      <ion-input type="text" [(ngModel)]="cupos" name="cupos" ></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-label position="stacked" color="primary">Precio</ion-label>
+      <ion-input type="text" [(ngModel)]="precio" name="precio" ></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-label position="stacked" color="primary">Ubicacion de salida</ion-label>
+      <ion-input type="text" [(ngModel)]="ubicacion" name="ubicacion"></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-label position="stacked" color="primary">Ubicacion de destino</ion-label>
+      <ion-input type="text" [(ngModel)]="destino" name="destino"></ion-input>
+    </ion-item>
+  </ion-list>
+  
+<ion-button color="warning" fill="outline" expand="block" class="large-button" expand="full" (click)="guardarViaje()">Guardar Viaje</ion-button>
+    
+
+      <ion-button color="warning" fill="outline" expand="block" class="large-button" routerLink="/home" >Regresar</ion-button>
+    
+  
+
+  <div class="logo-duoc">
+    <img src="assets/icon/duoc.jpg" alt="Duoc logo">
+  </div>
+</ion-content>

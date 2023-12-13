@@ -1,0 +1,68 @@
+/* Estilo general */
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #000000; /* Fondo principal negro */
+  color: #ffffff; /* Color de texto principal */
+}
+
+/* Barra de navegación */
+ion-header {
+  background-color: #111111; /* Color de fondo grisáceo oscuro para la barra de navegación */
+}
+
+/* Título de la barra de navegación */
+ion-title {
+  color: #ffffff;
+}
+
+/* Estilo específico para el título con span */
+ion-title span {
+  color: #f5a623; /* Color del span "APP" */
+}
+
+/* Contenido principal */
+ion-content {
+  padding: 20px;
+}
+
+/* Estilo de los botones */
+ion-button {
+  margin-top: 10px;
+}
+
+/* Estilo del texto de bienvenida */
+.texto ion-text {
+  font-size: 1.2em;
+  font-weight: bold;
+}
+
+/* Estilo del contenedor del mapa */
+.map-container {
+  height: 300px;
+}
+
+/* Estilo de los enlaces */
+a {
+  color: #ffffff; /* Color de enlaces */
+}
+
+/* Estilo del logo de Duoc */
+.logo-duoc img {
+  max-width: 100%;
+  height: auto;
+  margin-top: 20px;
+}
+
+/* Estilo para los botones grandes */
+.large-button {
+  margin-top: 20px;
+}
+
+/* Media Query para pantallas más pequeñas (por ejemplo, celulares) */
+@media only screen and (max-width: 767px) {
+  ion-content {
+    padding: 10px; /* Ajuste del espacio alrededor del contenido para pantallas más pequeñas */
+  }
+
+  /* Otros ajustes específicos para pantallas más pequeñas si es necesario */
+}

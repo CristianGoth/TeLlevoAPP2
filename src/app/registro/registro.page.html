@@ -1,0 +1,50 @@
+<ion-header>
+  <ion-toolbar class=" toolbar">
+    <ion-title>TeLlevo<span>APP</span></ion-title>
+  </ion-toolbar>
+</ion-header>
+<ion-card-header class="bienvenido">
+      <ion-title>Regístrate </ion-title>
+    </ion-card-header>
+<ion-content>
+  <br>
+  <br>
+  <br>
+  <ion-list>
+    <ion-item>
+      <ion-label position="stacked">Nombre</ion-label>
+      <ion-input [(ngModel)]="nombre" type="text"></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-label position="stacked">Apellido</ion-label>
+      <ion-input [(ngModel)]="apellido" type="text"></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-label position="stacked">RUT</ion-label>
+      <ion-input [(ngModel)]="rut" type="text"></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-label position="stacked">Correo Electrónico</ion-label>
+      <ion-input [(ngModel)]="email" type="email"></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-label position="stacked">Contraseña</ion-label>
+      <ion-input [(ngModel)]="password" type="password"></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-label position="stacked">Verificación de Contraseña</ion-label>
+      <ion-input [(ngModel)]="verificacion" type="password"></ion-input>
+    </ion-item>
+  </ion-list>
+  <div *ngIf="errorMessage" class="error-message">
+    {{ errorMessage }}
+  </div>
+  
+  <ion-button color="warning" fill="outline" class="large-button"   expand="block" (click)="registrar()">Registrarse</ion-button>
+  <ion-button color="warning" fill="outline" routerLink="/login" expand="block" class="large-button">Volver al inicio</ion-button>
+
+
+  <div class="logo-duoc">
+    <img src="assets/icon/duoc.jpg" alt="Duoc logo">
+  </div>
+</ion-content>

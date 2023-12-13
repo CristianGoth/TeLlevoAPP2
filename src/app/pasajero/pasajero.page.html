@@ -1,0 +1,30 @@
+<ion-header>
+  <ion-toolbar class="toolbar">
+    <ion-buttons slot="start"></ion-buttons>
+    <ion-title>TeLlevo<span>APP</span></ion-title>
+  </ion-toolbar>
+</ion-header>
+<ion-content>
+  <ion-list>
+    <ion-item *ngFor="let viaje of viajes; let i = index">
+      <ion-label>
+        <h2>Fecha: {{ viaje.fecha }}</h2>
+        <p>Hora de salida: {{ viaje.hora }}</p>
+        <p>Precio: ${{ viaje.precio }}</p>
+        <p>Cupos disponibles: {{ viaje.cupos }}</p>
+        <p>Salida: {{ viaje.ubicacion }}</p>
+        <p>Destino  : {{ viaje.destino }}</p>
+        <br>
+        <ion-avatar slot="start">
+          <img alt="auto" src="assets/icon/171241.png"/>
+        </ion-avatar>
+        <br>
+      </ion-label>
+      <ion-button color="warning" fill="outline" slot="end" (click)="tomarViaje(i)">Tomar Viaje</ion-button>
+    </ion-item>    
+  </ion-list>
+  <ion-button color="warning" fill="outline" expand="block" class="large-button" routerLink="/home">Regresar</ion-button>
+  <div class="logo-duoc">
+    <img src="assets/icon/duoc.jpg" alt="Duoc logo">
+  </div>
+</ion-content>

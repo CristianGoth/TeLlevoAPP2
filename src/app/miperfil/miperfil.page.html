@@ -1,0 +1,47 @@
+<ion-header>
+  <ion-toolbar class="toolbar">
+    <ion-buttons slot="start">
+      <!-- Agrega cualquier botón necesario en la barra de herramientas -->
+    </ion-buttons>
+    <ion-title>TeLlevo<span>APP</span></ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-list>
+    <ion-item>
+      <ion-avatar slot="start">
+        <img alt="Perfil" src="assets/icon/perf.png"/>
+      </ion-avatar>
+      <ion-label>Informacion personal</ion-label>
+    </ion-item>
+
+    <!-- Mostrar información del perfil -->
+    <ion-item>
+      <ion-label>Nombre:</ion-label>
+      <ion-text>{{ nombre }}</ion-text>
+    </ion-item>
+
+    <ion-item>
+      <ion-label>Apellido:</ion-label>
+      <ion-text>{{ apellido }}</ion-text>
+    </ion-item>
+
+    <ion-item>
+      <ion-label>RUT:</ion-label>
+      <ion-text>{{ rut }}</ion-text>
+    </ion-item>
+
+    <ion-item>
+      <ion-label>Email:</ion-label>
+      <ion-text>{{ email }}</ion-text>
+    </ion-item>
+  </ion-list>
+
+  <ion-button color="warning" fill="outline" expand="block" class="large-button" routerLink="/home">Volver al inicio</ion-button>
+  <ion-button color="warning" fill="outline" expand="block" class="large-button">Editar</ion-button>
+
+  <div class="logo-duoc">
+    <img src="assets/icon/duoc.jpg" alt="Duoc logo">
+  </div>
+</ion-content>

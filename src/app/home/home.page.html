@@ -1,0 +1,40 @@
+<ion-header>
+  <ion-toolbar class="toolbar">
+    <ion-buttons slot="start">
+    </ion-buttons>
+    <ion-title>TeLlevo<span>APP</span></ion-title>
+  </ion-toolbar>
+</ion-header>
+<ion-content>
+  <div class="item-content">
+    <div class="texto">
+      <ion-text> Bienvenido </ion-text>
+    </div>
+<ion-card-content class="map-container">
+<div #mapDiv class="map-container"></div>
+</ion-card-content>
+    <ion-card>
+      <ion-card-header>
+        <ion-card-title>Pide un viaje acercamiento</ion-card-title>
+      </ion-card-header>
+      <ion-card-content>
+        <ion-button color="warning" fill="outline" routerLink="/pasajero">Pasajero</ion-button>
+      </ion-card-content>
+    </ion-card>
+    <ion-card>
+      <ion-card-header>
+        <ion-card-title>Lleva a tus compañeros</ion-card-title>
+      </ion-card-header>
+      <ion-card-content>
+        <ion-button color="warning" fill="outline" routerLink="/conductor">Conductor</ion-button>
+      </ion-card-content>
+    </ion-card>
+    <ion-button color="warning" fill="outline" expand="block" class="large-button" routerLink="/miperfil" >Mi Perfil</ion-button>
+    <ion-button color="warning" fill="outline" routerLink="/login" expand="block" class="large-button">Salir</ion-button>
+  </div>
+<br>
+<br>
+  <div class="logo-duoc">
+    <img src="assets/icon/duoc.jpg" alt="Duoc logo">
+  </div>
+</ion-content>

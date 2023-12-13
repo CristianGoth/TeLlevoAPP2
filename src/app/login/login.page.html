@@ -1,0 +1,32 @@
+<ion-header>
+  <ion-toolbar class=" toolbar">
+    <ion-title>TeLlevo<span>APP</span></ion-title>
+  </ion-toolbar>
+</ion-header>
+<ion-card-header class="bienvenido">
+      <ion-title>Bienvenido</ion-title>
+    </ion-card-header>
+<ion-content>
+  <div class="item-content">
+      <ion-item lines="full">
+        <ion-label position="floating">Correo</ion-label>
+        <ion-input type="text" [(ngModel)]="email"></ion-input>
+      </ion-item>
+      <ion-item lines="full">
+        <ion-label position="floating">Password</ion-label>
+        <ion-input type="password" [(ngModel)]="password"></ion-input>
+      </ion-item>
+      <ion-row>
+        <ion-col>
+          <ion-button  color="warning" fill="outline" expand="block" (click)="ingresar()">Ingresar</ion-button>
+          <ion-button color="warning" fill="outline" routerLink="/registro" expand="block" class="large-button">Regístrate</ion-button>
+          <ion-button  color="warning" fill="outline" routerLink="/recuperar"expand="block">Recuperar contraseña</ion-button> 
+                
+        </ion-col>
+      </ion-row>
+  </div>
+  <div class="logo-duoc">
+    <img src="assets/icon/duoc.jpg" alt="Duoc logo">
+  </div>
+  
+</ion-content>
