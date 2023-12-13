@@ -1,0 +1,26 @@
+Dependencias de LocalStorage
+
+npm install @ionic/storage-angular --legacy-peer-deps
+
+npm install @ionic/storage --legacy-peer-deps
+
+Dependencias de BoxMaps
+
+npm install --save mapbox-gl
+
+Dependencias de FireBase
+
+npm install firebase --legacy-peer-deps
+
+npm install firebase angularfire2 --legacy-peer-deps
+
+npm install @angular/fire --legacy-peer-deps
+
+npm install @angular/fire firebase --legacy-peer-deps
+
+npm install firebase-admin --legacy-peer-deps
+
+
+Dependencias por si acaso
+
+npm install
